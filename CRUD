@@ -1,0 +1,62 @@
+--TABLA SELLER
+INSERT INTO SELLER (seller_name, seller_birthdate, seller_email, seller_phone, seller_typedocument, seller_document);
+
+-- Leer todos los registros
+SELECT * FROM SELLER;
+
+UPDATE SELLER;
+
+DELETE FROM SELLER; 
+
+--TABLA CLIENT
+INSERT INTO CLIENT (client_name, client_birthdate, client_phone, client_typedocument, client_document);
+
+-- Leer todos los registros
+SELECT * FROM CLIENT;
+
+DELETE FROM CLIENT;
+
+--TABLA PRODUCT 
+INSERT INTO PRODUCT (product_name, product_color, product_size, product_price, product_amount);
+
+-- Leer todos los registros
+SELECT * FROM PRODUCT;
+
+DELETE FROM PRODUCT;
+
+--TABLA PAYMENTS
+INSERT INTO PAYMENTS (payments_credit_weekly, payments_credit_biweekly, payments_credit_monthly, payments_cash, payments_transfer);
+
+-- Leer todos los registros
+SELECT * FROM PAYMENTS;
+
+DELETE FROM PAYMENTS;
+
+INSERT INTO INCOME (income_date, income_type, income_amount, income_description);
+
+--TABLA INCOME
+-- Leer todos los registros
+SELECT * FROM INCOME;
+
+DELETE FROM Income;
+
+INSERT INTO BUSINESS (business_name, business_address, business_phone, business_email, business_schedules);
+
+--TABLA BUSINESS
+INSERT INTO BUSINESS (business_name, business_address, business_phone, business_email, business_schedules);
+
+-- Leer todos los registros
+SELECT * FROM BUSINESS;
+
+DELETE FROM BUSINESS;
+
+--TABLA BILL
+INSERT INTO BILL (bill_seller_id, bill_seller_name, bill_seller_phone, bill_seller_document, bill_seller_typedocument, bill_seller_email,
+                   bill_client_id, bill_client_name, bill_client_phone, bill_client_document, bill_client_typedocument,
+                   bill_product_id, bill_product_name, bill_product_color, bill_product_price, bill_product_size, bill_product_amount,
+                   bill_business_address, bill_business_id, bill_totalValue, bill_income_id);
+
+-- Leer todos los registros
+SELECT * FROM BILL;
+
+DELETE FROM BILL;
